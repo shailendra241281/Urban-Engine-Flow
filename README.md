@@ -1,6 +1,6 @@
 # Urban Engine Flow
 
-A high-performance graph analytics engine developed in **C++** for transportation network analysis. The project models urban transportation systems as graph networks and applies classical graph algorithms to analyze routing efficiency, network capacity, and connectivity through a JSON-based input/output interface.
+A high-performance graph analytics engine developed in **C++17** for transportation network analysis. The project models transportation systems as graph networks and applies classical graph algorithms to analyze routing efficiency, network capacity, and connectivity through a JSON-based input/output interface.
 
 ---
 
@@ -12,47 +12,34 @@ The project demonstrates the practical application of graph algorithms in solvin
 
 ---
 
+## 🎯 Key Highlights
+
+- Developed a graph analytics engine in **C++17** for transportation network analysis.
+- Implemented **Dijkstra's Shortest Path**, **Dinic's Maximum Flow**, and **Minimum Cut** algorithms.
+- Designed a **JSON-based input/output pipeline** for flexible graph data processing.
+- Built using an efficient **adjacency-list graph representation** and STL data structures.
+
+---
+
 ## ✨ Features
 
 - 🚗 Compute shortest routes using **Dijkstra's Algorithm**
-- 🌊 Determine maximum traffic capacity using **Dinic's Maximum Flow Algorithm**
+- 🌊 Determine maximum network flow using **Dinic's Maximum Flow Algorithm**
 - ✂️ Identify network bottlenecks using **Minimum Cut**
 - 📄 JSON-based input and output processing
-- 🛣️ Supports weighted graphs
-- 🔄 Supports directed and undirected edges
+- 🛣️ Supports weighted directed and undirected graphs
 - ⚡ Efficient adjacency-list graph representation
+- 🧩 Modular and scalable implementation
 
 ---
 
 ## 🧠 Algorithms Implemented
 
-### 1. Dijkstra's Shortest Path
-
-Finds the shortest path between a source and destination node in a weighted graph.
-
-**Time Complexity**
-
-```
-O((V + E) log V)
-```
-
----
-
-### 2. Dinic's Maximum Flow
-
-Computes the maximum possible flow between a source and sink using level graphs and blocking flows.
-
-**Time Complexity**
-
-```
-O(V²E)
-```
-
----
-
-### 3. Minimum Cut
-
-Determines the minimum set of edges whose removal disconnects the source from the destination.
+| Algorithm | Purpose | Time Complexity |
+|-----------|---------|-----------------|
+| Dijkstra's Algorithm | Shortest Path | **O((V + E) log V)** |
+| Dinic's Algorithm | Maximum Flow | **O(V²E)** |
+| Minimum Cut | Network Bottleneck Detection | **O(V²E)** |
 
 ---
 
@@ -76,7 +63,7 @@ Urban-Engine-Flow/
 
 ## 📥 Input Format
 
-The program accepts JSON input describing the graph.
+The program accepts graph data in **JSON** format.
 
 Example:
 
@@ -118,18 +105,16 @@ Example:
 
 ---
 
-## 📤 Output
+## 📤 Sample Output
 
-The program returns results in JSON format.
-
-Example (Dijkstra):
+Example output for Dijkstra's Algorithm:
 
 ```json
 {
   "algorithm": "dijkstra",
   "found": true,
   "distance": 6,
-  "path": [0,1,2,4]
+  "path": [0, 1, 2, 4]
 }
 ```
 
@@ -140,7 +125,7 @@ Example (Dijkstra):
 - C++17
 - Standard Template Library (STL)
 - nlohmann/json
-- Graph Theory
+- Graph Algorithms
 - Priority Queue
 - Breadth First Search (BFS)
 - Depth First Search (DFS)
@@ -149,18 +134,20 @@ Example (Dijkstra):
 
 ## 🚀 Build
 
-Compile using:
+Compile the project using:
 
 ```bash
-g++ -std=c++17 src/main.cpp -o UrbanEngineFlow
+g++ -std=c++17 -Iinclude src/main.cpp -o UrbanEngineFlow
 ```
 
 ---
 
 ## ▶️ Run
 
+Run the executable by providing a JSON input file:
+
 ```bash
-./UrbanEngineFlow < input.json
+./UrbanEngineFlow < your_input_file.json
 ```
 
 ---
@@ -172,7 +159,7 @@ g++ -std=c++17 src/main.cpp -o UrbanEngineFlow
 - Road Network Optimization
 - Traffic Flow Analysis
 - Network Capacity Planning
-- Graph Algorithm Education
+- Graph Algorithm Research and Education
 
 ---
 
@@ -190,6 +177,17 @@ g++ -std=c++17 src/main.cpp -o UrbanEngineFlow
 ## 👨‍💻 Author
 
 **Shailendra Kumar Meena**
+
+B.Tech, Mechanical Engineering  
+Indian Institute of Technology Kanpur
+
+Interested in Software Development, Graph Algorithms, and Data Structures.
+
+---
+
+## 📝 Note
+
+** Shaikendra Kumar Meena **
 
 ---
 
