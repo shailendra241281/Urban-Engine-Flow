@@ -189,7 +189,7 @@ g++ -std=c++17 src/main.cpp -o UrbanEngineFlow
 
 ## 👨‍💻 Author
 
-Developed as a graph analytics project to demonstrate efficient graph algorithm implementation, optimization techniques, and software engineering principles in C++.
+**Shailendra Kumar Meena**
 
 ---
 
