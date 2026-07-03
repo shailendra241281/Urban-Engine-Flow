@@ -178,16 +178,11 @@ Run the executable by providing a JSON input file:
 
 **Shailendra Kumar Meena**
 
-B.Tech, Mechanical Engineering  
-Indian Institute of Technology Kanpur
-
-Interested in Software Development, Graph Algorithms, and Data Structures.
-
 ---
 
 ## 📝 Note
 
-** Shaikendra Kumar Meena **
+This project is intended for educational and research purposes to demonstrate graph algorithm implementation and transportation network analysis using C++.
 
 ---
 
